@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="104dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="111dp"
+        android:text="Izzan Rafif"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="31dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="140dp"
+        android:text="izzan.rafif"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/linkThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="110dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="144dp"
+        android:text="threads.net"
+        android:textColor="#808080"
+        android:textSize="11sp"
+        android:textStyle="" />
+
+    <TextView
+        android:id="@+id/biografi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        android:text="Not a really cool guy, but is enthusiastic in cars."
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="" />
+
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="175dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="260dp"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shareprofile"
+        android:layout_width="175dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="260dp"
+        android:text="Share Profile"
+        android:textAllCaps="false"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/followers"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/followers"/>
+
+    <TextView
+        android:id="@+id/jumlahFolls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/followers"
+        android:layout_marginStart="40dp"
+        app:layout_constraintTop_toTopOf="@id/followers"
+        android:layout_marginTop="5dp"
+        android:text="1M Followers • izzanrafif.com"
+        android:textColor="#808080"
+        android:textSize="11sp"
+        android:textStyle="" />
+
+    <View
+        android:id="@+id/garisthread"
+        android:layout_width="340dp"
+        android:layout_height="0.9dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textThread"/>
+
+    <View
+        android:id="@+id/garisthreadTebal"
+        android:layout_width="170dp"
+        android:layout_height="1.5dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="210dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/line_bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textThread"/>
+
+    <TextView
+        android:id="@+id/textThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Threads"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editprofile"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/textReplies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Replies"
+        android:textColor="#808080"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/textThread"
+        app:layout_constraintBottom_toBottomOf="@id/textThread"
+        android:layout_marginStart="200dp"
+        android:layout_marginBottom="0dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilBottom1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anime"
+        app:layout_constraintTop_toTopOf="@id/textThread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <TextView
+        android:id="@+id/usernamebottom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/profilBottom1"
+        android:layout_marginStart="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/profilBottom1"
+        android:layout_marginBottom="20dp"
+        android:text="izzan.rafif"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/usernamebottom1"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="@id/usernamebottom1"
+        android:layout_marginTop="15dp"
+        android:text="Oke, aku ada foto profil sekarang"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="" />
+
+    <ImageView
+        android:id="@+id/empatLogo"
+        android:layout_width="76dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_group"
+        app:layout_constraintStart_toStartOf="@id/caption1"
+        app:layout_constraintTop_toTopOf="@id/caption1"/>
+
+    <View
+        android:id="@+id/garispost1"
+        android:layout_width="340dp"
+        android:layout_height="0.9dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/empatLogo"/>
+
+    <TextView
+        android:id="@+id/postTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/profilBottom1"
+        android:layout_marginStart="260dp"
+        app:layout_constraintBottom_toBottomOf="@id/profilBottom1"
+        android:layout_marginBottom="20dp"
+        android:text="3 mins ago"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        android:textStyle="" />
+
+    <ImageView
+        android:id="@+id/tigatitik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/threedots"
+        app:layout_constraintTop_toTopOf="@id/postTime"
+        app:layout_constraintStart_toStartOf="@id/postTime"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="0dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilBottom2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/anime"
+        app:layout_constraintTop_toTopOf="@id/profilBottom1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <TextView
+        android:id="@+id/usernamebottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/profilBottom2"
+        android:layout_marginStart="45dp"
+        app:layout_constraintBottom_toBottomOf="@id/profilBottom2"
+        android:layout_marginBottom="20dp"
+        android:text="izzan.rafif"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/usernamebottom2"
+        android:layout_marginStart="0dp"
+        app:layout_constraintTop_toTopOf="@id/usernamebottom2"
+        android:layout_marginTop="15dp"
+        android:text="Sekarang apa?"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        android:textStyle="" />
+
+    <ImageView
+        android:id="@+id/empatLogo2"
+        android:layout_width="76dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_group"
+        app:layout_constraintStart_toStartOf="@id/caption2"
+        app:layout_constraintTop_toTopOf="@id/caption2"/>
+
+    <TextView
+        android:id="@+id/postTime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/profilBottom2"
+        android:layout_marginStart="260dp"
+        app:layout_constraintBottom_toBottomOf="@id/profilBottom2"
+        android:layout_marginBottom="20dp"
+        android:text="1 min ago"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        android:textStyle="" />
+
+    <ImageView
+        android:id="@+id/tigatitik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/threedots"
+        app:layout_constraintTop_toTopOf="@id/postTime2"
+        app:layout_constraintStart_toStartOf="@id/postTime2"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="0dp"/>
+
+    <View
+        android:id="@+id/garisreply"
+        android:layout_width="0.6dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toStartOf="@id/profilBottom2"
+        app:layout_constraintTop_toTopOf="@id/profilBottom2"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profilBottom3reply"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/catpfp"
+        app:layout_constraintTop_toTopOf="@id/garisreply"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageView" />
+
+    <TextView
+        android:id="@+id/replytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/profilBottom3reply"
+        android:layout_marginStart="35dp"
+        app:layout_constraintBottom_toBottomOf="@id/profilBottom3reply"
+        android:layout_marginBottom="0dp"
+        android:text="1 Reply • 14 Likes"
+        android:textColor="#808080"
+        android:textSize="10sp"
+        android:textStyle="" />
+
+    <View
+        android:id="@+id/garispost2"
+        android:layout_width="340dp"
+        android:layout_height="0.9dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/replytext"/>
+
+    <ImageView
+        android:id="@+id/world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/world"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"/>
+
+    <ImageView
+        android:id="@+id/ig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ig"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        app:layout_constraintStart_toStartOf="@id/ig"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
