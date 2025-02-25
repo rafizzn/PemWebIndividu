@@ -1,0 +1,548 @@
+.left {
+    background-color: rgb(0, 0, 0);
+    width: 319px;
+    height: 100vb;
+    border-right: 1px solid #3A3B3C
+
+}
+.mid {
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    height: 85vb;
+    border-right: 1px solid #3A3B3C;
+    border-bottom: 1px solid #3A3B3C;
+}
+
+.secondMid {
+    background-color: rgb(0, 0, 0);
+    width: 600px;
+    height: 14.9vb;
+    position: sticky;
+    margin-left: -601px;
+    margin-top: 539px;
+}
+
+.right {
+    background-color: black;
+    width: 450px;
+    height: 100vb;
+    border-left: 1px solid #3A3B3C;
+}
+
+.pembungkus {
+    display: flex;
+}
+
+.twitterlogo {
+    width: 25px;
+    height: 25px;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+
+/* LEFT PANEL */
+
+
+.notiflogo, .groklogo, .messageslogo, .communitylogo, .userlogo, .morelogo, .searchlogo, .homelogo {
+    width: 30px;
+    height: 30px;
+    margin-left: 60px;
+    margin-top: 19px;
+    display: flex;
+}
+
+#home, #search, #notification, #messages, #grok, #community, #user, #more {
+    color: white;
+    margin-top: -25px;
+    margin-left: 110px;
+    position: fixed;
+}
+
+.sidebarMenu {
+    align-items: center;
+    gap: 10px;
+    border-radius: 25px;
+    transition: background-color 200ms ease-out;
+    width: 100%;
+
+}
+
+.sidebarMenu:hover {
+    background-color: gray;    
+}
+
+.postBTN {
+    border: 1px solid white;
+    border-radius: 40px;
+    width: 210px;
+    height: 50px;
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+#pfp {
+    width: 40px;
+    height: 40px;
+    margin-top: 55px;
+    margin-left: 60px;
+}
+
+.nickname {
+    color: white;
+    margin-left: 110px;
+    margin-top: -40px;
+
+}
+
+.username {
+    color: #808080;
+    margin-left: 110px;
+    margin-top: -1px;
+}
+
+#titikTiga {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    margin-left: 275px;
+    margin-top: -25px;
+}
+
+/* MID PANEL */
+
+#banner {
+    width: 600px;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#pfp2 {
+    width: 135px;
+    height: 135px;
+    margin-left: 25px;
+    margin-top: -80px;
+    border-radius: 80px;
+    outline: 5px solid black;
+}
+
+#backarrow {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 16px;
+}
+
+#namaAtas {
+    position: absolute;
+    color: white;
+    margin-top: -250px;
+    margin-left: 70px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#postCount {
+    position: absolute;
+    color: #3A3B3C;
+    margin-top: -225px;
+    margin-left: 70px;
+    font-size: 13px;
+
+
+}
+
+.nickname2 {
+    color: white;
+    margin-left: 22px;
+    margin-top: 11px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.username2 {
+    color: #3A3B3C;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-size: 14px;
+    position: absolute;
+}
+
+.editprofilBTN {
+    border: 1px solid #3A3B3C;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    width: 115px;
+    height: 36px;
+    position: absolute;
+    margin-top: -52px;
+    margin-left: 470px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bio {
+    color: white;
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+.dateJoin {
+    color: #3A3B3C;
+    position: absolute;
+    margin-top: 106px;
+    margin-left: 45px;
+}
+
+#calendarlogo {
+    
+    width: 17px;
+    height: 17px;
+    margin-top: 103px;
+    margin-left: 19px;
+}
+
+.followers{
+    color: #3A3B3C;
+    font-size: 13px;
+    margin-top: 9px;
+    margin-left: 150px;
+    font-weight: bold;
+
+}
+
+.amount-followers {
+    color: white;
+    font-size: 13px;
+    margin-top: 9px;
+    margin-left: 115px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.following {
+    color: #3A3B3C;
+    font-size: 13px;
+    margin-top: -16px;
+    margin-left: 40px;
+    font-weight: bold;
+    position: absolute
+}
+
+.amount-following {
+    color: white;
+    font-size: 13px;
+    margin-top: -16px;
+    margin-left: 21px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#posts {
+    border: 1px solid black;
+    background-color: black;
+    color: #ffffff;
+    width: 99.7px;
+    height: 50px;
+    border-bottom: 3px solid #0080ff;
+    cursor: pointer;
+}
+
+#replies, #highlights, #articles, #media, #likes {
+    border: 1px solid black;
+    background-color: black;
+    color: #3A3B3C;
+    width: 99.7px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.barMenu {
+    display: flex;
+    position: absolute;
+    margin-top: 27px;
+}
+
+.barMenu button:hover {
+    color: white;
+    background-color: #1a1a1a; 
+    transition: 0.2s ease-in-out; 
+}
+
+#posts:hover {
+    border-bottom: 3px solid #00a2ff;
+}
+
+#replies:hover, 
+#highlights:hover, 
+#articles:hover, 
+#media:hover, 
+#likes:hover {
+    color: white; 
+    border-bottom: 3px solid #555;
+}
+
+/* SECOND MID */
+
+#pfpPosting {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#nicknamePost {
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 65px;
+    margin-top: -40px;
+}
+
+#usernamePost {
+    color: #3A3B3C;
+    margin-top: -17px;
+    margin-left: 110px;
+}
+
+#caption {
+    color: white;
+    margin-left: 64px;
+    margin-top: 2px;
+}
+
+#tigatitikMid {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-top: -38px;
+    margin-left: 570px;
+    cursor: pointer;
+}
+
+#grokKecil {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin-top: -40px;
+    margin-left: 535px;
+    cursor: pointer;
+}
+
+#bookmark {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 500px;
+    padding-left: 30px;
+    position: absolute;
+}
+
+#share {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 560px;
+    position: absolute;    
+}
+
+#comment {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 60px;
+    position: absolute;
+}
+
+#retweet {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 175px;
+    position: absolute;
+}
+
+#like {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 305px;
+    position: absolute;
+}
+
+#graph {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 435px;
+    position: absolute;
+}
+
+/* #comment, #retweet, #like, #graph {
+    width: 20px;
+    height: 20px;
+    margin-left: 90px;
+    margin-top: 10px;
+    position: relative;
+} */
+
+.utility {
+    display: flex;
+    
+}
+
+/* RIGHT */
+.rectangle {
+    width: 350px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #3A3B3C;
+    background-color: black;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#txtSearch {
+    color: #3A3B3C;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-top: -28px;
+}
+
+#srchGlass {
+    width: 15px;
+    height: 15px;
+    margin-left: 45px;
+    margin-top: -15px;
+    position: absolute;
+}
+
+
+.rectangle2 {
+    background-color: black;
+    width: 350px;
+    height: 300px;
+    border-radius: 25px;
+    border: 1px solid #3A3B3C;
+    margin-left: 31px;
+    margin-top: 30px;
+}
+
+.suggestions-container {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: -200px;
+    margin-left: 50px;
+}
+
+.suggestions-title {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 23px;
+    margin-top: -70px;
+}
+
+.user-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.handle {
+    color: gray;
+    font-size: 13px;
+}
+
+.follow-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.show-more {
+    color: #1DA1F2;
+    font-size: 14px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.rectangle3 {
+    background-color: black;
+    width: 350px;
+    height: 230px;
+    border-radius: 25px;
+    border: 1px solid #3A3B3C;
+    margin-left: -18px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.trending-container {
+    position: absolute;
+    width: 300px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 75px;
+    margin-left: -13px;
+}
+
+.trending-title {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.trending-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    position: relative;
+}
+
+.trending-category {
+    color: gray;
+    font-size: 13px;
+}
+
+.trending-name {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.trending-posts {
+    color: gray;
+    font-size: 13px;
+}
+
+.trending-item:last-child {
+    border-bottom: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
