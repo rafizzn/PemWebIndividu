@@ -3,8 +3,8 @@
     width: 319px;
     height: 100vb;
     border-right: 1px solid #3A3B3C
-
 }
+
 .mid {
     background-color: rgb(0, 0, 0);
     width: 600px;
@@ -43,7 +43,14 @@
 /* LEFT PANEL */
 
 
-.notiflogo, .groklogo, .messageslogo, .communitylogo, .userlogo, .morelogo, .searchlogo, .homelogo {
+.notiflogo,
+.groklogo,
+.messageslogo,
+.communitylogo,
+.userlogo,
+.morelogo,
+.searchlogo,
+.homelogo {
     width: 30px;
     height: 30px;
     margin-left: 60px;
@@ -51,7 +58,14 @@
     display: flex;
 }
 
-#home, #search, #notification, #messages, #grok, #community, #user, #more {
+#home,
+#search,
+#notification,
+#messages,
+#grok,
+#community,
+#user,
+#more {
     color: white;
     margin-top: -25px;
     margin-left: 110px;
@@ -68,7 +82,7 @@
 }
 
 .sidebarMenu:hover {
-    background-color: gray;    
+    background-color: gray;
 }
 
 .postBTN {
@@ -199,14 +213,14 @@
 }
 
 #calendarlogo {
-    
+
     width: 17px;
     height: 17px;
     margin-top: 103px;
     margin-left: 19px;
 }
 
-.followers{
+.followers {
     color: #3A3B3C;
     font-size: 13px;
     margin-top: 9px;
@@ -252,7 +266,11 @@
     cursor: pointer;
 }
 
-#replies, #highlights, #articles, #media, #likes {
+#replies,
+#highlights,
+#articles,
+#media,
+#likes {
     border: 1px solid black;
     background-color: black;
     color: #3A3B3C;
@@ -269,20 +287,20 @@
 
 .barMenu button:hover {
     color: white;
-    background-color: #1a1a1a; 
-    transition: 0.2s ease-in-out; 
+    background-color: #1a1a1a;
+    transition: 0.2s ease-in-out;
 }
 
 #posts:hover {
     border-bottom: 3px solid #00a2ff;
 }
 
-#replies:hover, 
-#highlights:hover, 
-#articles:hover, 
-#media:hover, 
+#replies:hover,
+#highlights:hover,
+#articles:hover,
+#media:hover,
 #likes:hover {
-    color: white; 
+    color: white;
     border-bottom: 3px solid #555;
 }
 
@@ -346,7 +364,7 @@
     height: 20px;
     margin-top: 10px;
     margin-left: 560px;
-    position: absolute;    
+    position: absolute;
 }
 
 #comment {
@@ -391,7 +409,7 @@
 
 .utility {
     display: flex;
-    
+
 }
 
 /* RIGHT */
@@ -541,7 +559,7 @@
     border-bottom: none;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
